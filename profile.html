@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Profile</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="shortcut icon" type="image/x-icon" href="logogllama.png">
+    <script src="profile.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="icons">
+            <a href="index.html">
+                <div class="home">
+                    <img src="home.png" alt="Home" width="50px">
+                </div>
+            </a>
+            <a href="basket.html">
+                <div class="basket">
+                    <img src="shop.png" alt="Shopping basket" width="50px">
+                </div>
+            </a>
+            <a href="profile.html">
+                <div class="profile">
+                    <img src="pfp.png" alt="Profile" width="60px">
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <main class="profile-page">
+        <section class="profile-card">
+            <div class="profile-preview">
+                <img id="profile-preview-image" src="pfp.png" alt="Profile preview">
+                <h1 id="profile-preview-name">Your Profile</h1>
+                <p id="profile-preview-gender">Tell us about yourself</p>
+            </div>
+
+            <form id="profile-form" class="profile-form">
+                <label for="profile-name">Name</label>
+                <input id="profile-name" name="name" type="text" placeholder="Your name" required>
+
+                <label for="profile-gender">Gender</label>
+                <select id="profile-gender" name="gender" required>
+                    <option value="">Choose one</option>
+                    <option value="Female">Female</option>
+                    <option value="Male">Male</option>
+                    <option value="Non-binary">Non-binary</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                </select>
+
+                <label for="profile-picture">Profile picture optional</label>
+                <input id="profile-picture" name="picture" type="file" accept="image/*">
+
+                <button type="submit">Save Profile</button>
+                <p id="profile-status" class="profile-status"></p>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

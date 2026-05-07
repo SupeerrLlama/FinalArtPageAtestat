@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: #f6f0ff;
+    color: #191321;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: right;
+    background-color: rgb(169, 119, 255);
+    padding: 20px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.icons {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+
+.basket {
+    padding: 0 5px 0 15px;
+}
+
+.basket,
+.home,
+.profile {
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.basket:hover,
+.home:hover,
+.profile:hover {
+    transform: scale(1.10);
+}
+
+.profile-page {
+    display: grid;
+    min-height: calc(100vh - 104px);
+    padding: 36px 20px;
+    place-items: center;
+}
+
+.profile-card {
+    display: grid;
+    grid-template-columns: minmax(240px, 360px) minmax(280px, 460px);
+    gap: 28px;
+    width: min(900px, 100%);
+    border: 3px solid rgb(169, 119, 255);
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 18px 60px rgba(55, 20, 90, 0.18);
+    padding: 28px;
+}
+
+.profile-preview {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    border-radius: 8px;
+    background: #efe4ff;
+    padding: 28px;
+    text-align: center;
+}
+
+.profile-preview img {
+    width: 170px;
+    height: 170px;
+    border: 5px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 18px;
+}
+
+.profile-preview h1 {
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+
+.profile-preview p {
+    color: #5f4b72;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.profile-form {
+    display: grid;
+    gap: 12px;
+}
+
+.profile-form label {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.profile-form input,
+.profile-form select {
+    width: 100%;
+    border: 2px solid #c7b1ec;
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 12px 14px;
+}
+
+.profile-form button {
+    border: none;
+    border-radius: 8px;
+    background: rgb(169, 119, 255);
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+    padding: 14px;
+}
+
+.profile-status {
+    min-height: 24px;
+    color: #3b7a37;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+@media (max-width: 760px) {
+    .profile-card {
+        grid-template-columns: 1fr;
+    }
+}
