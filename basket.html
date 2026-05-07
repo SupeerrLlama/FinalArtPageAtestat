@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Basket</title>
+    <link rel="stylesheet" href="basket.css">
+    <link rel="shortcut icon" type="image/x-icon" href="logogllama.png">
+    <script src="cart.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="icons">
+            <a href="index.html">
+                <div class="home">
+                    <img src="home.png" alt="Home" width="50px">
+                </div>
+            </a>
+            <a href="basket.html">
+                <div class="basket">
+                    <img src="shop.png" alt="Shopping basket" width="50px">
+                </div>
+            </a>
+            <a href="profile.html">
+                <div class="profile">
+                    <img src="pfp.png" alt="Profile" width="60px">
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <main class="basket-page">
+        <h1>Your Shopping Basket</h1>
+        <div class="basket-layout">
+            <section>
+                <p id="empty-basket" class="empty-basket">Your basket is empty.</p>
+                <div id="basket-list" class="basket-list"></div>
+            </section>
+
+            <aside class="basket-summary">
+                <h2>Order Total</h2>
+                <div class="total-row">
+                    <span>Total</span>
+                    <strong id="basket-total">$0.00</strong>
+                </div>
+                <a class="checkout-button" href="thank-you.html">Checkout</a>
+            </aside>
+        </div>
+    </main>
+</body>
+</html>

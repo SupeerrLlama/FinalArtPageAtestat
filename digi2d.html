@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital 2D</title>
+    <link rel="stylesheet" href="shop-category.css">
+    <link rel="shortcut icon" type="image/x-icon" href="logogllama.png">
+    <script src="products.js" defer></script>
+    <script src="cart.js" defer></script>
+    <script src="category.js" defer></script>
+</head>
+<body data-category="digital-2d">
+    <header>
+        <div class="input-container">
+            <input type="text" name="text" class="input" placeholder="search...">
+            <span class="icon">
+                <svg width="19px" height="19px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="1" d="M14 5H20" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path opacity="1" d="M14 8H17" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M21 11.5C21 16.75 16.75 21 11.5 21C6.25 21 2 16.75 2 11.5C2 6.25 6.25 2 11.5 2" stroke="#000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path><path opacity="1" d="M22 22L20 20" stroke="#000" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </span>
+        </div>
+        <nav class="category-nav">
+            <a class="category-button photos" href="pint.html">Photos</a>
+            <a class="category-button digital-2d active" href="digi2d.html" aria-disabled="true" tabindex="-1">Digital 2D</a>
+            <a class="category-button digital-3d" href="digi3D.html">Digital 3D</a>
+            <a class="category-button irl" href="IRL.html">IRL Art</a>
+        </nav>
+        <div class="icons">
+            <a href="index.html">
+                <div class="home">
+                    <img src="home.png" alt="" width="50px">
+                </div>
+            </a>
+            <a href="basket.html">
+                <div class="basket">
+                    <img src="shop.png" alt="" width="50px">
+                </div>
+            </a>
+            <a href="profile.html">
+                <div class="profile">
+                    <img src="pfp.png" alt="" width="60px">
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="shop-heading">
+            <h2>Digital 2D</h2>
+            <p>Posters, icons, fan art, stickers, and character studies.</p>
+        </section>
+        <p id="empty-products" class="empty-products">No products found.</p>
+        <section id="product-grid" class="rows"></section>
+    </main>
+</body>
+</html>
